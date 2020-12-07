@@ -70,6 +70,10 @@ def run(day, year=2020):
     print(f"AOC {year} Day {day}")
 
     mod = __import__(format_filename(day))
+    #url = f"https://adventofcode.com/{year}/day/{day}/input"
+    #batch = requests.get(url)
+    #fname = format_filename(day) + ".txt"
+    #open(fname, wb).write(batch.content)
     data = get_data(day)
 
     part1Time = run_part(1, mod, data)
