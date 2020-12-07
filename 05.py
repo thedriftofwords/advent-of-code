@@ -74,6 +74,3 @@ def part2(data):
       # Your seat is between them
       return s+1
     t = t + 1
-    
-  
-  
